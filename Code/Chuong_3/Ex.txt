@@ -1,0 +1,69 @@
+Bài 1 Định nghĩa (mô tả) cấu trúc dữ liệu trong C++ để biểu diễn DSLK đơn (kép) mà mỗi
+đối tượng của nó là một số nguyên dương.
+ Viết các hàm để thực hiện các thao tác khởi tạo
+DS, chèn (vào đầu DS), xóa và tìm kiếm một đối tượng trên DSLK
+
+Bài 2 Định nghĩa cấu trúc dữ liệu trong C++ để biểu diễn stack bằng mảng mà mỗi đối tượng
+của nó là một số nguyên dương.
+ Viết các hàm để thực hiện các thao tác StackInitialize,
+StackEmpty, Push, Pop và StackFull.
+
+Bài 3 Định nghĩa cấu trúc dữ liệu trong C++ để biểu diễn Queue bằng mảng mà mỗi phần tử
+của nó là một số nguyên dương.
+ Viết các hàm để thực hiện các thao tác QueueInitialize,
+QueueEmpty, Enqueue, Dequeue và QueueFull.
+
+Bài 4 Giả sử mỗi đối tượng trên DS (mảng hoặc DSLK) là một số nguyên.
+ Viết các hàm để
+tìm phần tử có giá trị nhỏ nhất (lớn nhất).
+
+Bài 5 Giả sử mỗi đối tượng trên DSLK đơn (kép) là một số nguyên dương.
+ Viết các chương
+trình con (như các hàm trong C++) để tìm phần tử có giá trị là số chẵn nhỏ nhất (lớn nhất).
+
+Bài 6 Giả sử mỗi đối tượng trên DSLK đơn (kép) là một số nguyên dương.
+ Viết chương trình
+con (như một hàm trong C++) xóa các phần tử có giá trị chẵn trong DS.
+
+Bài 7 Giả sử mỗi đối tượng trên DSLK là một số nguyên dương.
+ Viết giải thuật tính tổng các
+phần tử có giá trị lẻ.
+ Tính độ phức tạp của giải thuật đã viết.
+
+Bài 8 Giả sử mỗi đối tượng trên DSLK đơn là một số nguyên dương.
+ Viết giải thuật tính tổng
+các số chẵn, chia hết cho 3 trong DS.
+ Tính độ phức tạp của giải thuật đã viết
+Bài 9 Giả sử mỗi đối tượng trên DSLK là một số nguyên.
+ Viết hàm đệ qui để chèn một phần
+tử có giá trị bằng k vào cuối DS.
+ Tính độ phức tạp của giải thuật đã viết
+Bài 10 Viết hàm (C++) để chèn có thứ tự tăng một số nguyên vào DSLK đơn của các số
+nguyên.
+
+Bài 11 Cho 2 DSLK các số nguyên L1 và L2 có thứ tự tăng.
+ Viết hàm trộn 2 DS này thành
+DS L có thự tự tăng.
+
+Bài 12 Trong một ứng dụng tin học để quản lý hàng hóa tại một cơ sở kinh doanh, các mặt
+hàng, bao gồm mã số (code), tên (name), số lượng (amount) và giá tiền (price), được lưu trữ
+bởi một DSLK đơn.
+
+a.
+ Giả sử trong danh sách đã có một số mặt hàng, viết chương trình con (hàm) in ra tên của
+các mặt hàng có giá tiền bằng p.
+
+b.
+ Viết chương trình con (hàm) tính tổng giá tiền của tất cả các mặt hàng hiện có trong danh
+sách.
+
+Bài 13 Viết giải thuật sắp DS liên kết tăng dần theo giá trị (là các số) của các nút.
+
+Bài 14 Cho DSLK tăng theo khóa (giá trị của nút), viết giải thuật chèn một nút có khóa giá trị
+k vào DS liên kết sao cho DS tăng theo khóa.
+
+Bài 15 Viết giải thuật chèn một nút có khóa k vào sau nút có khóa m trong một DSLK đơn.
+
+Bài 16 Viết giải thuật chèn một nút có khóa k vào sau nút có khóa (chẵn, nguyên tố đầu tiên).
+
+Bài 17 Viết giải thuật đảo ngược một danh sách liên kết đơn

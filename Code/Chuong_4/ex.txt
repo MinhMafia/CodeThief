@@ -1,0 +1,91 @@
+Bài 1 Định nghĩa (mô tả) CTDL cây nhị phân tìm kiếm trong C++ với khóa của các nút là các
+số nguyên.
+ Viết các giải thuật (hàm trong C++) hiện thực các thao tác trên cây như duyệt cây
+(tiền, trung và hậu thứ tự-NLR, LNR, LRN), tìm kiếm, chèn và xóa nút có khóa k trên cây.
+
+Bài 2 Thực hiện quá trình chèn các khóa 7, 19, 12, 16, 20, 23, 5, 9 vào một cây nhị phân tìm
+kiếm (bắt đầu từ cây rỗng), sau đó thực hiện quá trình tìm khóa 20.
+
+Bài 3 Viết giải thuật tạo một DS liên kết với các giá trị của các nút là giá trị của các khóa
+trong một cây nhị phân tìm kiếm.
+
+Bài 4 Viết một hàm xuất ra màn hình tất cả các khóa (phần tử) trên cây nhị phân tìm kiếm
+theo thứ tự tăng dần. ( là LNR)
+
+Bài 5 Viết một hàm xuất ra màn hình tất cả các khóa chẵn trên cây nhị phân tìm kiếm theo thứ
+tự giảm dần.
+3
+Bài 6 Viết một hàm xuất ra màn hình tất cả các khóa là bội số của 3 trên cây nhị phân tìm
+kiếm theo thứ tự giảm dần.
+
+Bài 7 Viết hàm để tính tổng số nút trong một cây nhị phân tìm kiếm.
+
+Bài 8 Viết hàm để tính tổng giá trị các khóa trong một cây nhị phân tìm kiếm.
+
+Bài 9 Viết hàm để tính tổng giá trị các khóa lẻ trong một cây nhị phân tìm kiếm.
+
+Bài 10 Hãy biểu diễn quá trình thực thi giải thuật chèn nút có khóa 28 vào cây nhị phân tìm
+kiếm sau.
+
+Bài 11 Hãy biểu diễn quá trình thực thi giải thuật xóa nút có khóa 40 trong cây nhị phân tìm
+kiếm ở Bài 10.
+
+Bài 12 Cho cây nhị phân như trong Bài 10.
+Hãy liệt kê các phần tử của cây theo thứ tự NLR,LNR, LRN.
+NLR: 30 20 15 25 50 40 33 45 42 48 60
+LNR: 15 20 25 30 33 40 42 45 48 50 60
+LRN: 15 25 20 33 42 48 45 40 60 50 30
+
+Bài 13 Trong một ứng dụng tin học để quản lý hàng hóa tại một cơ sở kinh doanh, các mặt
+hàng, bao gồm mã số (code), tên (name), số lượng (amount) và giá tiền (price), được lưu trữ
+bởi một cây nhị phân tìm kiếm theo mã số mặt hàng.
+
+a.
+ Giả sử trong cây đã có một số mặt hàng, viết giải thuật (hàm C++) in ra tên của các mặt
+hàng có giá tiền bằng p.
+
+b.
+ Viết giải thuật tính tổng giá tiền của tất cả các mặt hàng hiện có trong cây.
+
+Bài 14 Viết giải thuật tìm mức của nút có khóa k trên cây nhị phân tìm kiếm.
+
+Bài 15 Viết giải thuật tính số nút lá của một cây nhị phân.
+
+Bài 16 Viết giải thuật tính chiều cao của một cây nhị phân.
+
+Bài 17 Viết giải thuật in các nút trên đường đi từ gốc đến nút có khóa k trong cây nhị phân
+tìm kiếm.
+
+Bài 18 Viết giải thuật tính tổng số nút ở mức i trên cây nhị phân.
+
+Bài 19 Viết giải thuật tính tổng số nút có khóa chẵn.
+
+Bài 20 Viết giải thuật tính tổng nút có 1 con trong cây nhị phân.
+
+Bài 21 Viết giải thuật tính tổng nút có 2 con trong cây nhị phân.
+
+Bài 22 Viết giải thuật in các nút trên mức thứ i của cây nhị phân tìm kiếm.
+
+Bài 23 Viết giải thuật kiểm tra xem một cây nhị phân có phải là một cây nhị phân tìm kiếm
+hay không.
+
+Bài 24 Sử dụng cấu trúc dữ liệu cây nhị phân tìm kiếm để viết một giải thuật sắp xếp một
+mảng các số nguyên theo thứ tự tăng dần.
+
+Bài 25 Vẽ cây nhị phân tìm kiếm cân bằng theo các khóa 23, 12, 5, 89, 13, 11, 15, 34, 67.
+
+Bài 26 Viết giải thuật quay đơn left-left rotateLL(AVLTree &T) để cân bằng lại một cây
+nhị phân tìm kiếm lệch bên trái
+30
+60
+50
+15
+20
+25 40
+33 45
+42 484
+Bài 27 Viết giải thuật quay đơn right-right rotateRR(AVLTree &T) để cân bằng lại một cây
+nhị phân tìm kiếm lệch bên phải.
+
+Bài 28 Thực hiện thao thao tác quay left-left để cân bằng cây nhị phân sau:
+Bài 29 Thực hiện thao thao tác quay right-right để cân bằng cây nhị phân sau
