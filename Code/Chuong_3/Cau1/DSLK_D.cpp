@@ -25,6 +25,7 @@ void insertList (LIST &L , int k) {
 }
 
 LIST ListSearch(LIST L , int k) {
+	if( L == NULL ) return L;
 	LIST x = L ;
 	while( x != NULL && x -> key != k) {
 		x = x -> next ;
@@ -99,10 +100,10 @@ void cau9(LIST &L, int k ) {
 }
 
 //Sắp xếp tăng
-void cau13(LIST &L3) {
-	if(L3 == NULL || L3->next == NULL) return;
+void cau13(LIST &L) {
+	if(L == NULL || L->next == NULL) return;
 	LIST sorted = NULL;
-	LIST current = L3;
+	LIST current = L;
 
 	while(current != NULL) {
 		LIST nextNode = current -> next;
@@ -119,7 +120,7 @@ void cau13(LIST &L3) {
 		}
 		current = nextNode;
 	}
-	L3 = sorted ;
+	L = sorted ;
 }
 
 //  chèn 1 số k sau số m

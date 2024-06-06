@@ -6,7 +6,7 @@ void insertionSort(int a[] , int n)  {
     for(int j = 1 ; j < n ; j++) {
         int key = a[j];
         int i = j - 1;
-        while(i >= 0 && a[i] > key) {
+        while(i >= 0 && a[i] > key) {// muốn giảm dần thì a[i] < key
             a[i + 1] = a[i];
             i = i - 1;
         }
@@ -26,15 +26,15 @@ void selectionSort(int a[] , int n) {
     for(int i = 0; i < n - 1; i++) {
         int k = i;
         for(int j = i + 1 ; j < n; j++) 
-            if(a[j] < a[k]) k = j;
+            if(a[j] < a[k]) k = j; // giảm dần thì a[j] > a[k]
         swap(a[k] , a[i]);
     }
 } // T = O(n2)
 
 void bubbleSort(int a[] , int n) {
-    for(int i = n - 1 ; i >= 1; i --) {
+    for(int i = n - 1 ; i >= 1; i--) {
         for(int j = 0 ; j <= i - 1;j++) {
-            if(a[j] > a[j + 1]) {
+            if(a[j] > a[j + 1]) { // nếu giảm dần thì > thành <
                 swap(a[j], a[j + 1]);
             }
         }
@@ -135,6 +135,31 @@ void radixsort(int array[], int size) {
     countingSort(array, size, place);
 }
 
+void heapify (int a[], int n , int i) {
+    int largest = i;
+    int left = 2*i + 1;
+    int right = 2*i + 2;
+    if(left < n && a[left] < a[largest]) //nếu tăng dần thì a[left] > a[largest] 
+        largest = left;
+    if(right < n && a[right] < a[largest])//nếu tăng dần thì a[right] > a[largest]
+        largest = right;
+    if(largest != i) {
+        swap(a[i] , a[largest]);;
+        heapify(a, n, largest);
+    }
+}
+
+void heapSort(int a[], int n) {
+    for(int i = n/2 - 1; i >=0 ; i--) 
+        heapify(a ,n ,i);
+    for(int i = n - 1; i >= 0 ; i--) {
+        swap(a[0] , a[i]);
+        heapify(a ,i ,0);
+    }
+
+}
+
+
 int main() {
     int a[] = { 4, 1 , 8 ,3 , 9 ,7  ,2 , 8 , 0 ,23};
     int b[4][5] = { {4, 1 , 8 ,3 , 9 },
@@ -144,18 +169,19 @@ int main() {
 
     int n = sizeof(a) / sizeof(a[0]);
     // insertionSort(a , n);
-    // selectionSort(a , n);
+    selectionSort(a , n);
     // bubbleSort(a , n);
     // quickSort(a,0,n-1);
     // mergeSort(a,0,n-1);
     // radixsort(a,n);
+    // heapSort(a , n);
     // for(int i = 0 ; i < 4; i++) {
         // insertionSort(b[i],5);
     // } // sắp từng hàng dãy 2 chiều
 
-    // for(int i = 0 ; i < n ; i++) {
-        // cout << a[i] << endl;
-    // }
+    for(int i = 0 ; i < n ; i++) {
+        cout << a[i] << endl;
+    }
     // for(int i = 0 ; i < 4 ; i++) {
         // for(int j = 0 ; j < 5 ; j++) {
             // cout << b[i][j] << " ";
